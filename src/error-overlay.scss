@@ -1,0 +1,35 @@
+.error-overlay {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+
+    .error-content {
+        margin: 10px;
+    }
+
+    .error-type-text {
+        position: fixed;
+        margin-left: 10px;
+    }
+
+    .error-message {
+        display: inline-block;
+    }
+
+    .error-stack {
+        white-space: pre-line;
+        font-size: 0.7em;
+    }
+}
